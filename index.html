@@ -203,8 +203,10 @@
 
 
 <tr>
-<td> <label for="d">Preferred Meeting Date</label>:</td>
-<td><input  id="d" type="date" name="date" ></td>
+<td> 
+    <label for="d">Preferred Meeting Date</label>:</td>
+<td>
+    <input  id="d" type="date" name="date" ></td>
    <td colspan="5" style="width: 300;"></td>
     <td>
         <label >Best Time to Contact</label>:
@@ -220,142 +222,88 @@
 
 </fieldset>
 
-
+<form>
     <fieldset>
 
   <legend> Personal Information</legend>
-        <table width="100%">
+   <table> 
+    <!-- <tr>
 
-             <tr> 
-                <td>budget range:
-
-                 </td>
-                 
-            </tr>
-                 
-                <td ><label for="p">Project Type</label>:*</td>
-                <td><input  id="p"type="text" name="project type" required></td>
-                <td colspan="5" style="width: 600px;"></td>
-
-                <td><label for="Description">Project Description</label>:*
-                <textarea name="Project Description" id="Description" required></textarea></td>
-
-            </tr>
-
-
-
+                <td colspan="5" style="width: 700px;"></td>
+         <label for="Description">Project Description</label>:*
+                <textarea name="Project Description" id="Description" required></textarea>
+                <td></td> -->
 
             
-            <tr>
-    <td>
-        <td colspan="6" style="width: 600px;"></td>
-                 <td>Services Required (Check all that apply):</td>
-    </td>
-</tr>
-            <tr>
-                <td><label for="$">Under $5,000</label></td>
-                <td><input id="$" type="radio" value="under $,5000" name="gender"></td>
+    </tr>
+<br>
+<br>
 
-                <td colspan="5" style="width: 600px;"></td>
+    
+                <tr>
+                    
+
+                <label for="p">Project Type :*</label>
+                <input  id="p"type="text" name="project type" required>
+
+                <td colspan="3" style="width: 600px;"></td>
+         <td><label for="Description">Project Description</label>:*
+                <textarea name="Project Description" id="Description" required></textarea>
+               </td>
 
 
-                <td><input  id="check"type="checkbox" name="check" >
-                <label for="check">UI/UX Design</label></td>
+
+                </tr>
+
                 
+                <tr>
+                    <td colspan="1">
 
+                        <label for="budget">Budget Range:</label><br>
 
+                        <input id="5" type="radio" name="Budget" value="under5000">
+                        <label for="5">Under $5000</label><br>
 
-            </tr>
-                
-            
-            <tr>
-                    <td><label for="5-10">$5,000-$10,000</label> </td>
-                    <td><input  id="5-10"type="radio" value="5,000-10,000" name="gender"></td>
+                        <input id="5-10" type="radio" name="Budget" value="5000-10000">
+                        <label for="5-10">$5000 - $10000</label><br>
 
+                        <input id="10-25" type="radio" name="Budget" value="10000-25000">
+                        <label for="10-25">$10000 - $25000</label><br>
 
-                    <td colspan="5" style="width: 600px;"></td>
+                        <input id="over" type="radio" name="Budget" value="over25000">
+                        <label for="over">Over $25000</label>
+                    </td>
+               
 
+                    <td style="width:700px;"></td>
 
-                <td><input  id="fn"type="checkbox" name="check" >
-                <label for="fn">Frontend development</label></td>
+                    <td colspan="2">
+              
+                        <label for="111">Services Required (check all that apply):</label><br>
 
+                        <input id="ui" type="checkbox" name="services" value="ui/ux">
+                        <label for="ui">UI/UX Design</label><br>
 
-            </tr>
-           
-                    <tr>
-                <td><label for="10-25">$10,000-25,000</label></td>
-                <td><input id="10-25" type="radio" value="10-25" name="gender"></td>
+                        <input id="frontend" type="checkbox" name="services" value="frontend">
+                        <label for="frontend">Frontend Development</label><br>
 
+                        <input id="backend" type="checkbox" name="services" value="backend">
+                        <label for="backend">Backend Development</label><br>
 
+                        <input id="host" type="checkbox" name="services" value="host&deploy">
+                        <label for="host">Hosting & Deployment</label><br>
 
-
-                    <td colspan="5" style="width: 600px;"></td>
-
-
-                <td><input  id="bn"type="checkbox" name="check" >
-                <label for="bn">Backend development</label></td>
-            
-            </tr>
-                
-                
-                
-             <tr>
-                   <td><label for="r">Over $25,000</label></td>
-                   <td><input  id="r" type="radio" value="Over" name="gender"></td>
-
-
-
-
-
-                       <td colspan="5" style="width: 600px;"></td>
-
-
-                <td><input  id="host"type="checkbox" name="check" >
-                <label for="host">Hosting & Deyploment </label></td>
-             </tr>
-
-
-
-
-
-<tr>
-    <td colspan="4">
-        <label for="source">How did you hear about us?</label>
-        
-        
-
-        <select id="source" name="source" style="width: 30%";>
-            <option> --Select Source--  </option> 
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-        
-        </select>
-    </td>
-
-         <td colspan="3" style="width: 600px;"></td>
-
-
-                <td><input  id="m"type="checkbox" name="check" >
-                <label for="m">maintenance & Support </label></td>
-</tr>
-
-
-
- 
-
-        </table>
-
-
-    </fieldset>
+                        <input id="maintain" type="checkbox" name="services" value="maintain&support">
+                        <label for="maintain">Maintenance & Support</label>
+                    </td>
+                </tr>
+</table>
+     </fieldset>
 
      <button style="background-color: blue;">Send Message</button>
-<button style="background-color: brown;">Clear Form</button>
+    <button style="background-color: brown;">Clear Form</button>
+    
 </form> 
-
 </br>
 </br>
 
